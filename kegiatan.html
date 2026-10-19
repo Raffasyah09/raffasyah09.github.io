@@ -1,24 +1,236 @@
+
 <!DOCTYPE html>
 <html>
 <head>
     <title>Kegiatan</title>
+
+    <style>
+        /* BACKGROUND UTAMA */
+        body {
+            background-color: #F5F0E6;
+            background-image: radial-gradient(#D9B99B 1px, transparent 1px);
+            background-size: 22px 22px;
+            font-family: 'Trebuchet MS', Arial, sans-serif;
+            color: #4E342E;
+            margin: 30px 0;
+        }
+
+        /* TABEL UTAMA */
+        table {
+            border-collapse: separate;
+            border-radius: 24px;
+            border-spacing: 0;
+            overflow: hidden;
+            border: 3px solid #8D5524;
+            background-color: #FFFDF8;
+            box-shadow: 0 12px 30px rgba(78, 52, 46, 0.22);
+            transition: box-shadow 0.3s ease;
+        }
+
+        table:hover {
+            box-shadow: 0 16px 38px rgba(78, 52, 46, 0.28);
+        }
+
+        /* SEL TABEL */
+        td {
+            padding: 20px;
+            border-color: #E0C5A4;
+            line-height: 1.8;
+        }
+
+        /* HEADER */
+        tr:first-child td {
+            background: linear-gradient(
+                135deg,
+                #6F3528,
+                #A65D3F,
+                #8D5524
+            );
+            color: #FFF8E7;
+            padding: 30px 20px;
+            border-bottom: 4px solid #D6A85F;
+        }
+
+        h1 {
+            font-size: 34px;
+            letter-spacing: 2px;
+            margin: 5px 0 10px;
+            text-shadow: 2px 3px 5px rgba(0, 0, 0, 0.25);
+        }
+
+        h2 {
+            color: #8D5524;
+            border-left: 6px solid #C58B45;
+            padding: 8px 12px;
+            background-color: #F8EBDD;
+            border-radius: 0 14px 14px 0;
+            margin-top: 18px;
+        }
+
+        h3 {
+            color: #6F3528;
+            background-color: #F0DDC5;
+            padding: 12px;
+            border-radius: 14px;
+            text-align: center;
+        }
+
+        /* MENU NAVIGASI */
+        tr:nth-child(2) td {
+            background-color: #E9D3B5;
+            padding: 18px 10px;
+            border-bottom: 3px solid #C58B45;
+        }
+
+        a {
+            color: #7B3F22;
+            font-weight: bold;
+            text-decoration: none;
+            padding: 7px 12px;
+            border-radius: 12px;
+            transition: all 0.3s ease;
+        }
+
+        a:hover {
+            background-color: #8D5524;
+            color: #FFF8E7;
+            box-shadow: 0 4px 10px rgba(78, 52, 46, 0.2);
+        }
+
+        /* PARAGRAF */
+        p {
+            line-height: 1.9;
+            text-align: justify;
+        }
+
+        p[align="right"] {
+            color: #A47752;
+            font-size: 13px;
+        }
+
+        /* PEMBATAS KONTEN */
+        hr {
+            border: none;
+            height: 3px;
+            border-radius: 10px;
+            background: linear-gradient(
+                to right,
+                #8D5524,
+                #E5C18A,
+                transparent
+            );
+            margin: 28px 0;
+        }
+
+        /* AREA KONTEN */
+        tr:nth-child(3) td {
+            vertical-align: top;
+            background-color: #FFFDF8;
+        }
+
+        tr:nth-child(3) td:first-child {
+            border-right: 2px dashed #D9B99B;
+        }
+
+        /* TAUTAN EKSTERNAL */
+        ol {
+            padding-left: 25px;
+        }
+
+        li {
+            padding: 8px 0;
+            color: #8D5524;
+        }
+
+        li::marker {
+            color: #C58B45;
+            font-weight: bold;
+        }
+
+        /* FOOTER */
+        tr:last-child td {
+            background: linear-gradient(
+                135deg,
+                #6F3528,
+                #A0522D,
+                #6F3528
+            );
+            color: #FFF8E7;
+            border-top: 4px solid #D6A85F;
+            padding: 18px;
+        }
+
+        tr:last-child p {
+            margin: 8px 0;
+        }
+
+        tr:last-child p[align="right"] {
+            color: #F3D7A5;
+        }
+
+        /* RESPONSIVE TABLET */
+        @media screen and (max-width: 950px) {
+            table {
+                width: 95%;
+            }
+
+            td {
+                padding: 12px;
+                overflow-wrap: anywhere;
+            }
+
+            h1 {
+                font-size: 27px;
+            }
+        }
+
+        /* RESPONSIVE HP */
+        @media screen and (max-width: 600px) {
+            body {
+                margin: 10px 0;
+            }
+
+            table {
+                width: 96%;
+                font-size: 14px;
+            }
+
+            td {
+                padding: 9px;
+            }
+
+            h1 {
+                font-size: 23px;
+                letter-spacing: 1px;
+            }
+
+            h2 {
+                font-size: 20px;
+            }
+
+            a {
+                padding: 5px;
+            }
+        }
+    </style>
 </head>
 
-<body bgcolor="F5F0E6">
+<body>
 
 <table border="1" width="900" align="center">
-            <!-- HEADER -->
+
+    <!-- HEADER -->
     <tr>
         <td colspan="2" align="center" bgcolor="#A52A2A">
             <font color="white">
-            <h1>Website RAFFASYAH</h1>
-            <i>A DAY IN MY LIFE</i>
+                <h1>Website RAFFASYAH</h1>
+                <i>A DAY IN MY LIFE</i>
             </font>
         </td>
     </tr>
 
-            <!-- MENU 4 HYPERLINK -->
-<tr>
+    <!-- MENU 4 HYPERLINK -->
+    <tr>
         <td colspan="2" align="center">
             <a href="index.html">Beranda</a> |
             <a href="Profil.html">Profil</a> |
@@ -27,47 +239,73 @@
         </td>
     </tr>
 
-            <!-- ISI -->
-<tr>
+    <!-- ISI -->
+    <tr>
         <td>
             <h2>Kegiatan saat ini</h2>
+
             <p>
-                Raffasyah mengikuti Organisasi Pramuka dan Organisasi Siswa Antar Sekolah (OSIS) 
+                Raffasyah mengikuti Organisasi Pramuka dan Organisasi Siswa Antar Sekolah (OSIS)
             </p>
+
             <hr>
+
             <h2>Sekolah Asal</h2>
+
             <p>
                 Raffasyah sekoolah di SMKN 1 tangerang yang ada di daerah Cikokol
-            <hr><h2>Karier Dan Prestasi Raffasyah</h2>
-            <p>Raffasyah Zidane Ardika, memiliki pengalaman berorganisasi dengan mengikuti OSIS selama 1 periode. Dalam OSIS, saya dipercaya menjadi anggota Seksi Bidang 9, yang memiliki tugas dan tanggung jawab dalam menjaga serta meningkatkan kebersihan lingkungan sekolah.
+            </p>
 
-Selain itu, saya juga aktif dalam kegiatan Pramuka dan dipercaya sebagai Bendahara. Melalui pengalaman tersebut, saya belajar mengenai tanggung jawab, kedisiplinan, kerja sama, pengelolaan keuangan, serta kemampuan berorganisasi dengan baik.</p>
+            <hr>
+
+            <h2>Karier Dan Prestasi Raffasyah</h2>
+
+            <p>
+                Raffasyah Zidane Ardika, memiliki pengalaman berorganisasi dengan mengikuti OSIS selama 1 periode. Dalam OSIS, saya dipercaya menjadi anggota Seksi Bidang 9, yang memiliki tugas dan tanggung jawab dalam menjaga serta meningkatkan kebersihan lingkungan sekolah.
+
+                <br><br>
+
+                Selain itu, saya juga aktif dalam kegiatan Pramuka dan dipercaya sebagai Bendahara. Melalui pengalaman tersebut, saya belajar mengenai tanggung jawab, kedisiplinan, kerja sama, pengelolaan keuangan, serta kemampuan berorganisasi dengan baik.
+            </p>
         </td>
 
         <!-- TAUTAN LINK -->
         <td valign="top">
             <h3>Tautan Eksternal</h3>
+
             <ol>
-                <li><a href=https://www.instagram.com/raffasyah_56?stkn=MTQ3YnozNmVtNnh3NA>INSTAGRAM</a></li>
-                <li><a href=https://raffasyah09.github.io>WEBSIDE</a></li>
-                <li><a href=https://www.tiktok.com/@secrett08086?_r=1&_t=ZS-9A6IJ9w03iK>TIKTOK</a></li>
+                <li>
+                    <a href="https://www.instagram.com/raffasyah_56?stkn=MTQ3YnozNmVtNnh3NA">INSTAGRAM</a>
+                </li>
+
+                <li>
+                    <a href="https://raffasyah09.github.io">WEBSIDE</a>
+                </li>
+
+                <li>
+                    <a href="https://www.tiktok.com/@secrett08086?_r=1&_t=ZS-9A6IJ9w03iK">TIKTOK</a>
+                </li>
             </ol>
         </td>
     </tr>
-        <!-- FOOTER -->
-  <tr bgcolor="#A52A2a">
-    <td colspan="2" align="center">
-        <font color="white">
-            <p><p>Website Profil Ja Morant</p>
-            <p>Pemain Basket Profesional Asal Amerika Serikat </p>
-        </font>
-<p align="right">
+
+    <!-- FOOTER -->
+    <tr bgcolor="#A52A2a">
+        <td colspan="2" align="center">
+            <font color="white">
+                <p><p>Website Profil Ja Morant</p>
+                <p>Pemain Basket Profesional Asal Amerika Serikat</p>
+            </font>
+
+            <p align="right">
                 <font color="4CAF50" size="2">
                     &copy; Raffasyah Zidane Ardika
                 </font>
             </p>
-    </td>
-</tr>
+        </td>
+    </tr>
+
 </table>
+
 </body>
 </html>
