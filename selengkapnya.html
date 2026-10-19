@@ -1,24 +1,251 @@
+
 <!DOCTYPE html>
 <html>
 <head>
     <title>Biodata Raffasyah</title>
+
+    <style>
+        /* BACKGROUND UTAMA */
+        body {
+            background-color: #F5F0E6;
+            background-image: radial-gradient(#D9B99B 1px, transparent 1px);
+            background-size: 22px 22px;
+            font-family: 'Trebuchet MS', Arial, sans-serif;
+            color: #4E342E;
+            margin: 30px 0;
+        }
+
+        /* TABEL UTAMA */
+        table {
+            border-collapse: separate;
+            border-radius: 24px;
+            border-spacing: 0;
+            overflow: hidden;
+            border: 3px solid #8D5524;
+            background-color: #FFFDF8;
+            box-shadow: 0 12px 30px rgba(78, 52, 46, 0.22);
+            transition: box-shadow 0.3s ease;
+        }
+
+        table:hover {
+            box-shadow: 0 16px 38px rgba(78, 52, 46, 0.28);
+        }
+
+        /* SEL TABEL */
+        td {
+            padding: 20px;
+            border-color: #E0C5A4;
+            line-height: 1.8;
+        }
+
+        /* HEADER */
+        tr:first-child td {
+            background: linear-gradient(
+                135deg,
+                #6F3528,
+                #A65D3F,
+                #8D5524
+            );
+            color: #FFF8E7;
+            padding: 30px 20px;
+            border-bottom: 4px solid #D6A85F;
+        }
+
+        h1 {
+            font-size: 34px;
+            letter-spacing: 2px;
+            margin: 5px 0 10px;
+            text-shadow: 2px 3px 5px rgba(0, 0, 0, 0.25);
+        }
+
+        h2 {
+            color: #8D5524;
+            border-left: 6px solid #C58B45;
+            padding: 8px 12px;
+            background-color: #F8EBDD;
+            border-radius: 0 14px 14px 0;
+            margin-top: 18px;
+        }
+
+        h3 {
+            color: #6F3528;
+            background-color: #F0DDC5;
+            padding: 12px;
+            border-radius: 14px;
+            text-align: center;
+        }
+
+        /* MENU NAVIGASI */
+        tr:nth-child(2) td {
+            background-color: #E9D3B5;
+            padding: 18px 10px;
+            border-bottom: 3px solid #C58B45;
+        }
+
+        a {
+            color: #7B3F22;
+            font-weight: bold;
+            text-decoration: none;
+            padding: 7px 12px;
+            border-radius: 12px;
+            transition: all 0.3s ease;
+        }
+
+        a:hover {
+            background-color: #8D5524;
+            color: #FFF8E7;
+            box-shadow: 0 4px 10px rgba(78, 52, 46, 0.2);
+        }
+
+        /* PARAGRAF */
+        p {
+            line-height: 1.9;
+            text-align: justify;
+        }
+
+        /* GAMBAR */
+        img {
+            max-width: 100%;
+            width: 300px;
+            height: auto;
+            border-radius: 20px;
+            border: 5px solid #E9D3B5;
+            box-shadow: 0 8px 20px rgba(78, 52, 46, 0.2);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        img:hover {
+            transform: scale(1.02);
+            box-shadow: 0 12px 25px rgba(78, 52, 46, 0.3);
+        }
+
+        center {
+            padding: 10px;
+            color: #8D5524;
+        }
+
+        center i {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 6px 14px;
+            background-color: #F0DDC5;
+            border-radius: 20px;
+            color: #6F3528;
+        }
+
+        /* AREA KONTEN */
+        tr:nth-child(3) td {
+            vertical-align: top;
+            background-color: #FFFDF8;
+        }
+
+        tr:nth-child(3) td:first-child {
+            border-right: 2px dashed #D9B99B;
+        }
+
+        /* TAUTAN EKSTERNAL */
+        ol {
+            padding-left: 25px;
+        }
+
+        li {
+            padding: 8px 0;
+            color: #8D5524;
+        }
+
+        li::marker {
+            color: #C58B45;
+            font-weight: bold;
+        }
+
+        /* FOOTER */
+        tr:last-child td {
+            background: linear-gradient(
+                135deg,
+                #6F3528,
+                #A0522D,
+                #6F3528
+            );
+            color: #FFF8E7;
+            border-top: 4px solid #D6A85F;
+            padding: 18px;
+        }
+
+        tr:last-child p {
+            margin: 8px 0;
+        }
+
+        tr:last-child p[align="right"] {
+            color: #F3D7A5;
+        }
+
+        /* RESPONSIVE TABLET */
+        @media screen and (max-width: 950px) {
+            table {
+                width: 95%;
+            }
+
+            td {
+                padding: 12px;
+                overflow-wrap: anywhere;
+            }
+
+            h1 {
+                font-size: 27px;
+            }
+        }
+
+        /* RESPONSIVE HP */
+        @media screen and (max-width: 600px) {
+            body {
+                margin: 10px 0;
+            }
+
+            table {
+                width: 96%;
+                font-size: 14px;
+            }
+
+            td {
+                padding: 9px;
+            }
+
+            h1 {
+                font-size: 23px;
+                letter-spacing: 1px;
+            }
+
+            h2 {
+                font-size: 20px;
+            }
+
+            a {
+                padding: 5px;
+            }
+
+            img {
+                width: 90%;
+            }
+        }
+    </style>
 </head>
 
 <body bgcolor="">
 
-    <table border="1" width="900" align="center">
+<table border="1" width="900" align="center">
+
     <!-- HEADER -->
     <tr>
         <td colspan="2" align="center" bgcolor="#A52A2A">
             <font color="white">
-            <h1>Website RAFFASYAH</h1>
-            <i>a day in my life</i>
+                <h1>Website RAFFASYAH</h1>
+                <i>a day in my life</i>
             </font>
         </td>
     </tr>
 
-<!-- MENU 4 HYPERLINK -->
-<tr>
+    <!-- MENU 4 HYPERLINK -->
+    <tr>
         <td colspan="2" align="center">
             <a href="index.html">Beranda</a> |
             <a href="Profil.html">Profil</a> |
@@ -26,53 +253,74 @@
             <a href="kontak.html">Kontak</a>
         </td>
     </tr>
-        <!-- ISI -->
+
+    <!-- ISI -->
     <tr>
         <td>
-<center>
-    <img src="krakatau.jpeg" width="300">
-    <br>
-    <i>Gunung Anak Krakatau</i>
-</center>
+            <center>
+                <img src="krakatau.jpeg" width="300">
+                <br>
+                <i>Gunung Anak Krakatau</i>
+            </center>
+
             <h2>Berita Gunung Anak Krakatau</h2>
+
             <p>
-             Gunung Anak Krakatau mengalami peningkatan aktivitas vulkanik pada awal September 2026. Erupsi menerus terjadi sejak 4 September pukul 23.07 WIB hingga 6 September 2026 pukul 00.04 WIB. Erupsi tersebut menghasilkan lontaran material vulkanik, lava, serta suara dentuman dan gemuruh yang terdengar hingga wilayah pesisir Banten.
+                Gunung Anak Krakatau mengalami peningkatan aktivitas vulkanik pada awal September 2026. Erupsi menerus terjadi sejak 4 September pukul 23.07 WIB hingga 6 September 2026 pukul 00.04 WIB. Erupsi tersebut menghasilkan lontaran material vulkanik, lava, serta suara dentuman dan gemuruh yang terdengar hingga wilayah pesisir Banten.
             </p>
+
             <p>
                 Setelah erupsi menerus berakhir, Gunung Anak Krakatau masih mengalami beberapa erupsi Strombolian. Aktivitas gunung api terus dipantau oleh Badan Geologi dan PVMBG karena masih terdapat aktivitas kegempaan serta potensi terjadinya erupsi lanjutan. Masyarakat dan wisatawan juga diimbau untuk tidak mendekati kawah aktif dalam radius yang telah ditetapkan.
             </p>
-             <p>
-            Pada 21 September 2026, status Gunung Anak Krakatau diturunkan dari Level III (Siaga) menjadi Level II (Waspada) karena aktivitas vulkaniknya menunjukkan penurunan. Meskipun demikian, masyarakat tetap diminta untuk mengikuti informasi resmi dari pihak berwenang dan tidak melakukan aktivitas di sekitar zona berbahaya. Erupsi tersebut juga dilaporkan menyebabkan munculnya daratan baru di sekitar kawasan Gunung Anak Krakatau.
+
+            <p>
+                Pada 21 September 2026, status Gunung Anak Krakatau diturunkan dari Level III (Siaga) menjadi Level II (Waspada) karena aktivitas vulkaniknya menunjukkan penurunan. Meskipun demikian, masyarakat tetap diminta untuk mengikuti informasi resmi dari pihak berwenang dan tidak melakukan aktivitas di sekitar zona berbahaya. Erupsi tersebut juga dilaporkan menyebabkan munculnya daratan baru di sekitar kawasan Gunung Anak Krakatau.
             </p>
+
             <br>
         </td>
 
         <!-- TAUTAN LINK -->
         <td valign="top">
             <h3>Tautan Eksternal</h3>
+
             <ol>
-                <li><a href="https://www.mawan.net">Website Mawan</a></li>
-                <li><a href="https://github.com">Github</a></li>
-                <li><a href="https://wikipedia.org">Wikipedia</a></li>
-                <li><a href="https://www.w3schools.com">W3Schools</a></li>
+                <li>
+                    <a href="https://www.mawan.net">Website Mawan</a>
+                </li>
+
+                <li>
+                    <a href="https://github.com">Github</a>
+                </li>
+
+                <li>
+                    <a href="https://wikipedia.org">Wikipedia</a>
+                </li>
+
+                <li>
+                    <a href="https://www.w3schools.com">W3Schools</a>
+                </li>
             </ol>
         </td>
     </tr>
-        <!-- FOOTER -->
-   <tr bgcolor="#A52A2A">
-    <td colspan="2" align="center">
-        <font color="white">
-            <p>Website Profil Raffasyah</p>
-            <p> murid SMK Negeri 1 tangerang</p>
-        </font>
-<p align="right">
+
+    <!-- FOOTER -->
+    <tr bgcolor="#A52A2A">
+        <td colspan="2" align="center">
+            <font color="white">
+                <p>Website Profil Raffasyah</p>
+                <p> murid SMK Negeri 1 tangerang</p>
+            </font>
+
+            <p align="right">
                 <font color="4CAF50" size="2">
                     &copy; Raffasyah Zidane Ardika
                 </font>
             </p>
-    </td>
-</tr>
-</table>
-</body>
+        </td>
+    </tr>
 
+</table>
+
+</body>
 </html>
