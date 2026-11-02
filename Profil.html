@@ -1,301 +1,326 @@
 
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Profil Website</title>
+/* ==========================================
+   RAFFASYAH WEBSITE
+   THE SCHOOL YARD - HIP HOP HIGH SCHOOL 90s
+========================================== */
 
-    <style>
-        /* BACKGROUND UTAMA */
-        body {
-            background-color: #F5F0E6;
-            background-image: radial-gradient(#D9B99B 1px, transparent 1px);
-            background-size: 22px 22px;
-            font-family: 'Trebuchet MS', Arial, sans-serif;
-            color: #4E342E;
-            margin: 30px 0;
-        }
+/* GOOGLE-STYLE RETRO BASE */
 
-        /* TABEL UTAMA */
-        table {
-            border-collapse: separate;
-            border-radius: 24px;
-            border-spacing: 0;
-            overflow: hidden;
-            border: 3px solid #8D5524;
-            background-color: #FFFDF8;
-            box-shadow: 0 12px 30px rgba(78, 52, 46, 0.22);
-            transition: box-shadow 0.3s ease;
-        }
+* {
+    box-sizing: border-box;
+}
 
-        table:hover {
-            box-shadow: 0 16px 38px rgba(78, 52, 46, 0.28);
-        }
+body {
+    margin: 0;
+    padding: 35px 15px;
+    background-color: #171717;
+    background-image:
+        radial-gradient(#454545 1.5px, transparent 1.5px);
+    background-size: 20px 20px;
+    color: #171717;
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+}
 
-        /* SEL TABEL */
-        td {
-            padding: 20px;
-            border-color: #E0C5A4;
-            line-height: 1.8;
-        }
+/* MAIN TABLE */
 
-        /* HEADER */
-        tr:first-child td {
-            background: linear-gradient(
-                135deg,
-                #6F3528,
-                #A65D3F,
-                #8D5524
-            );
-            color: #FFF8E7;
-            padding: 30px 20px;
-            border-bottom: 4px solid #D6A85F;
-        }
+table {
+    width: min(900px, 100%);
+    margin: auto;
+    border-collapse: separate;
+    border-spacing: 0;
+    border: 5px solid #171717;
+    border-radius: 4px;
+    overflow: hidden;
+    background-color: #F4EBD8;
+    box-shadow:
+        9px 9px 0 #E94B35,
+        17px 17px 0 #E8C547;
+    transition: 0.3s ease;
+}
 
-        h1 {
-            font-size: 30px;
-            letter-spacing: 1px;
-            margin: 5px 0 10px;
-            text-shadow: 2px 3px 5px rgba(0, 0, 0, 0.25);
-        }
+table:hover {
+    box-shadow:
+        12px 12px 0 #E94B35,
+        20px 20px 0 #E8C547;
+}
 
-        h2 {
-            color: #8D5524;
-            border-left: 6px solid #C58B45;
-            padding: 8px 12px;
-            background-color: #F8EBDD;
-            border-radius: 0 14px 14px 0;
-            margin-top: 18px;
-        }
+/* TABLE CELLS */
 
-        h3 {
-            color: #6F3528;
-            background-color: #F0DDC5;
-            padding: 12px;
-            border-radius: 14px;
-            text-align: center;
-        }
+td {
+    padding: 22px;
+    border-color: #171717;
+    line-height: 1.7;
+}
 
-        /* MENU NAVIGASI */
-        tr:nth-child(2) td {
-            background-color: #E9D3B5;
-            padding: 18px 10px;
-            border-bottom: 3px solid #C58B45;
-        }
+/* HEADER - STREET STYLE */
 
-        a {
-            display: inline-block;
-            color: #7B3F22;
-            font-weight: bold;
-            text-decoration: none;
-            padding: 7px 12px;
-            border-radius: 12px;
-            transition: all 0.3s ease;
-        }
+tr:first-child td {
+    background:
+        linear-gradient(120deg, #2455A4, #172F59);
+    color: #F4EBD8;
+    padding: 45px 20px;
+    border-bottom: 7px solid #E8C547;
+    position: relative;
+}
 
-        a:hover {
-            background-color: #8D5524;
-            color: #FFF8E7;
-            box-shadow: 0 4px 10px rgba(78, 52, 46, 0.2);
-        }
+tr:first-child h1 {
+    color: #FFFFFF;
+    font-size: clamp(30px, 6vw, 54px);
+    font-weight: 1000;
+    text-transform: uppercase;
+    letter-spacing: -2px;
+    text-shadow:
+        4px 4px 0 #E94B35,
+        7px 7px 0 #171717;
+    margin: 0 0 12px;
+}
 
-        /* JUDUL PROFIL */
-        tr:nth-child(3) td:first-child h1 {
-            color: #8D5524;
-            background-color: #F8EBDD;
-            border-left: 6px solid #C58B45;
-            border-radius: 0 14px 14px 0;
-            padding: 12px;
-            font-size: 25px;
-            text-shadow: none;
-            letter-spacing: 0;
-        }
+tr:first-child i {
+    display: inline-block;
+    background: #E8C547;
+    color: #171717;
+    font-size: 13px;
+    font-weight: 900;
+    font-style: normal;
+    letter-spacing: 4px;
+    padding: 8px 15px;
+    transform: rotate(-2deg);
+}
 
-        /* INFORMASI PROFIL */
-        p {
-            line-height: 1.9;
-            text-align: justify;
-        }
+/* NAVIGATION MENU */
 
-        tr:nth-child(3) td:first-child p {
-            background-color: #F8EBDD;
-            padding: 12px 15px;
-            border-radius: 14px;
-            border-left: 4px solid #C58B45;
-            margin: 14px 0;
-            overflow-wrap: anywhere;
-        }
+tr:nth-child(2) td {
+    background: #E8C547;
+    padding: 17px 10px;
+    border-bottom: 5px solid #171717;
+}
 
-        tr:nth-child(3) td:first-child p b {
-            color: #6F3528;
-        }
+a {
+    display: inline-block;
+    color: #171717;
+    font-weight: 900;
+    font-size: 13px;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 9px 13px;
+    margin: 3px;
+    border: 2px solid transparent;
+    transition: 0.25s ease;
+}
 
-        /* AREA KONTEN */
-        tr:nth-child(3) td {
-            vertical-align: top;
-            background-color: #FFFDF8;
-        }
+a:hover {
+    background: #E94B35;
+    color: #FFFFFF;
+    border: 2px solid #171717;
+    transform: rotate(-3deg) scale(1.05);
+    box-shadow: 3px 3px 0 #171717;
+}
 
-        tr:nth-child(3) td:first-child {
-            border-right: 2px dashed #D9B99B;
-        }
+/* MAIN CONTENT */
 
-        /* TAUTAN EKSTERNAL */
-        ol {
-            padding-left: 25px;
-        }
+tr:nth-child(3) td {
+    vertical-align: top;
+    background-color: #F4EBD8;
+    padding: 28px;
+}
 
-        li {
-            padding: 8px 0;
-            color: #8D5524;
-        }
+tr:nth-child(3) td:first-child {
+    width: 62%;
+    border-right: 4px dashed #171717;
+}
 
-        li::marker {
-            color: #C58B45;
-            font-weight: bold;
-        }
+tr:nth-child(3) td:last-child {
+    width: 38%;
+    background-color: #F8E2B9;
+}
 
-        /* FOOTER */
-        tr:last-child td {
-            background: linear-gradient(
-                135deg,
-                #6F3528,
-                #A0522D,
-                #6F3528
-            );
-            color: #FFF8E7;
-            border-top: 4px solid #D6A85F;
-            padding: 18px;
-        }
+/* PROFILE TITLE */
 
-        tr:last-child p {
-            margin: 8px 0;
-        }
+tr:nth-child(3) td:first-child h1 {
+    background: #E94B35;
+    color: #FFFFFF;
+    font-size: 24px;
+    font-weight: 1000;
+    text-transform: uppercase;
+    padding: 15px;
+    border: 3px solid #171717;
+    box-shadow: 5px 5px 0 #171717;
+    text-shadow: 2px 2px 0 #171717;
+    letter-spacing: 0;
+    margin: 0 0 25px;
+}
 
-        tr:last-child p[align="right"] {
-            color: #F3D7A5;
-        }
+/* PROFILE INFORMATION */
 
-        /* RESPONSIVE TABLET */
-        @media screen and (max-width: 950px) {
-            table {
-                width: 95%;
-            }
+p {
+    line-height: 1.8;
+    text-align: left;
+}
 
-            td {
-                padding: 12px;
-                overflow-wrap: anywhere;
-            }
+tr:nth-child(3) td:first-child p {
+    background: #FFFFFF;
+    border: 2px solid #171717;
+    border-left: 7px solid #2455A4;
+    padding: 13px;
+    margin: 15px 0;
+    font-size: 14px;
+    box-shadow: 3px 3px 0 #D4BFA0;
+    overflow-wrap: anywhere;
+}
 
-            h1 {
-                font-size: 25px;
-            }
-        }
+tr:nth-child(3) td:first-child p b {
+    color: #E94B35;
+    font-weight: 1000;
+}
 
-        /* RESPONSIVE HP */
-        @media screen and (max-width: 600px) {
-            body {
-                margin: 10px 0;
-            }
+/* EXTERNAL LINKS */
 
-            table {
-                width: 96%;
-                font-size: 14px;
-            }
+h3 {
+    background: #2455A4;
+    color: #FFFFFF;
+    border: 3px solid #171717;
+    padding: 15px 8px;
+    font-size: 19px;
+    font-weight: 1000;
+    text-transform: uppercase;
+    text-align: center;
+    box-shadow: 4px 4px 0 #E94B35;
+    transform: rotate(-2deg);
+}
 
-            td {
-                padding: 9px;
-            }
+ol {
+    padding-left: 25px;
+    margin-top: 25px;
+}
 
-            h1 {
-                font-size: 22px;
-            }
+li {
+    padding: 10px 0;
+    color: #E94B35;
+    font-weight: bold;
+}
 
-            tr:nth-child(3) td:first-child h1 {
-                font-size: 20px;
-            }
+li::marker {
+    color: #2455A4;
+    font-weight: 1000;
+}
 
-            a {
-                padding: 5px;
-            }
-        }
-    </style>
-</head>
+tr:nth-child(3) td:last-child a {
+    background: #E8C547;
+    border: 2px solid #171717;
+    box-shadow: 3px 3px 0 #171717;
+    width: 100%;
+    text-align: center;
+}
 
-<body>
+tr:nth-child(3) td:last-child a:hover {
+    background: #E94B35;
+    color: white;
+}
 
-<table border="1" width="900" align="center">
+/* FOOTER */
 
-    <!-- HEADER -->
-    <tr>
-        <td colspan="2" align="center" bgcolor="#A52A2A">
-            <font color="white">
-                <h1>Website Raffasyah</h1>
-                <i>GET READY WITH ME</i>
-            </font>
-        </td>
-    </tr>
+tr:last-child td {
+    background: #171717;
+    color: #F4EBD8;
+    padding: 25px;
+    border-top: 7px solid #E94B35;
+}
 
-    <!-- MENU 4 HYPERLINK -->
-    <tr>
-        <td colspan="2" align="center">
-            <a href="index.html">Beranda</a> |
-            <a href="Profil.html">Profil</a> |
-            <a href="kegiatan.html">Kegiatan</a> |
-            <a href="kontak.html">Kontak</a>
-        </td>
-    </tr>
+tr:last-child p {
+    font-weight: 900;
+    letter-spacing: 1px;
+}
 
-    <!-- ISI -->
-    <tr>
-        <td>
-            <h1>PROFIL PEMBUAT WEBSITE</h1>
+tr:last-child p[align="right"] {
+    color: #E8C547;
+    font-size: 12px;
+    border-top: 1px dashed #777;
+    padding-top: 12px;
+}
 
-            <p><b>NAMA : </b> RAFFASYAH ZIDANE ARDIKA</p>
+/* RESPONSIVE TABLET */
 
-            <p><b>KELAS : </b>XI DKV 2</p>
+@media screen and (max-width: 768px) {
+    body {
+        padding: 20px 10px;
+    }
 
-            <p><b>JURUSAN :</b> :DESAIN KOMUNIKASI VISUAL</p>
+    td {
+        padding: 14px;
+    }
 
-            <p>Perkenalkan Website Buatan Saya di sini tempat untuk saya berkreasi</p>
-        </td>
+    tr:nth-child(3) td {
+        padding: 18px;
+    }
 
-        <!-- TAUTAN LINK -->
-        <td valign="top">
-            <h3>Tautan Eksternal</h3>
+    tr:nth-child(3) td:first-child {
+        width: 60%;
+    }
 
-            <ol>
-                <li>
-                    <a href="https://www.instagram.com/raffasyah_56?stkn=MTQ3YnozNmVtNnh3NA">INSTAGRAM</a>
-                </li>
+    tr:nth-child(3) td:last-child {
+        width: 40%;
+    }
+}
 
-                <li>
-                    <a href="https://raffasyah09.github.io">WEBSIDE</a>
-                </li>
+/* RESPONSIVE MOBILE */
 
-                <li>
-                    <a href="https://www.tiktok.com/@secrett08086?_r=1&_t=ZS-9A6IJ9w03iK">TIKTOK</a>
-                </li>
-            </ol>
-        </td>
-    </tr>
+@media screen and (max-width: 600px) {
+    body {
+        padding: 12px 8px;
+    }
 
-    <!-- FOOTER -->
-    <tr bgcolor="#A52A2A">
-        <td colspan="2" align="center">
-            <font color="white">
-                <p>Website Profil Raffasyah</p>
-                <p>murid SMK Negeri 1 Tangerang</p>
-            </font>
+    table {
+        width: 100%;
+        box-shadow: 5px 5px 0 #E94B35;
+    }
 
-            <p align="right">
-                <font color="4CAF50" size="2">
-                    &copy; Raffasyah Zidane Ardika
-                </font>
-            </p>
-        </td>
-    </tr>
+    tr:first-child td {
+        padding: 30px 10px;
+    }
 
-</table>
+    tr:first-child h1 {
+        font-size: 30px;
+    }
 
-</body>
-</html>
+    tr:first-child i {
+        font-size: 10px;
+        letter-spacing: 2px;
+    }
+
+    tr:nth-child(2) td {
+        padding: 10px 3px;
+    }
+
+    a {
+        padding: 7px 6px;
+        font-size: 11px;
+        margin: 2px;
+    }
+
+    tr:nth-child(3) td {
+        padding: 12px;
+    }
+
+    tr:nth-child(3) td:first-child h1 {
+        font-size: 17px;
+    }
+
+    tr:nth-child(3) td:first-child p {
+        font-size: 12px;
+        padding: 9px;
+    }
+
+    h3 {
+        font-size: 14px;
+        padding: 10px 5px;
+    }
+
+    tr:nth-child(3) td:last-child a {
+        font-size: 10px;
+        padding: 7px 3px;
+    }
+
+    td {
+        line-height: 1.6;
+    }
+}
