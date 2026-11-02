@@ -1,326 +1,247 @@
+/* HIP-HOP HIGH SCHOOL 90s */
 
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Biodata Raffasyah</title>
+* {
+    box-sizing: border-box;
+}
 
-    <style>
-        /* BACKGROUND UTAMA */
-        body {
-            background-color: #F5F0E6;
-            background-image: radial-gradient(#D9B99B 1px, transparent 1px);
-            background-size: 22px 22px;
-            font-family: 'Trebuchet MS', Arial, sans-serif;
-            color: #4E342E;
-            margin: 30px 0;
-        }
+body {
+    background-color: #171717;
+    background-image:
+        radial-gradient(#393939 1.5px, transparent 1.5px);
+    background-size: 18px 18px;
+    font-family: "Trebuchet MS", Arial, sans-serif;
+    color: #f5e6c8;
+    margin: 30px 0;
+}
 
-        /* TABEL UTAMA */
-        table {
-            border-collapse: separate;
-            border-radius: 24px;
-            border-spacing: 0;
-            overflow: hidden;
-            border: 3px solid #8D5524;
-            background-color: #FFFDF8;
-            box-shadow: 0 12px 30px rgba(78, 52, 46, 0.22);
-            transition: box-shadow 0.3s ease;
-        }
+/* TABEL UTAMA */
+table {
+    border-collapse: separate;
+    border-spacing: 0;
+    border-radius: 5px;
+    overflow: hidden;
+    border: 4px solid #e0ad28;
+    background-color: #242424;
+    box-shadow: 10px 10px 0 #a52b24;
+    transition: 0.3s ease;
+}
 
-        table:hover {
-            box-shadow: 0 16px 38px rgba(78, 52, 46, 0.28);
-        }
+table:hover {
+    box-shadow: 14px 14px 0 #a52b24;
+}
 
-        /* SEL TABEL */
-        td {
-            padding: 20px;
-            border-color: #E0C5A4;
-            line-height: 1.8;
-        }
+td {
+    padding: 20px;
+    border-color: #454545;
+    line-height: 1.8;
+}
 
-        /* HEADER */
-        tr:first-child td {
-            background: linear-gradient(
-                135deg,
-                #6F3528,
-                #A65D3F,
-                #8D5524
-            );
-            color: #FFF8E7;
-            padding: 30px 20px;
-            border-bottom: 4px solid #D6A85F;
-        }
+/* HEADER */
+tr:first-child td {
+    background: linear-gradient(135deg, #a52b24, #651c19);
+    color: #ffe7a0;
+    padding: 35px 20px;
+    border-bottom: 5px solid #e0ad28;
+}
 
-        h1 {
-            font-size: 34px;
-            letter-spacing: 2px;
-            margin: 5px 0 10px;
-            text-shadow: 2px 3px 5px rgba(0, 0, 0, 0.25);
-        }
+h1 {
+    font-family: Impact, "Arial Black", sans-serif;
+    font-size: 42px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    margin: 5px 0 10px;
+    text-shadow: 4px 4px #171717;
+}
 
-        h2 {
-            color: #8D5524;
-            border-left: 6px solid #C58B45;
-            padding: 8px 12px;
-            background-color: #F8EBDD;
-            border-radius: 0 14px 14px 0;
-            margin-top: 18px;
-        }
+tr:first-child i {
+    color: #e0ad28;
+    font-weight: bold;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+}
 
-        h3 {
-            color: #6F3528;
-            background-color: #F0DDC5;
-            padding: 12px;
-            border-radius: 14px;
-            text-align: center;
-        }
+/* JUDUL */
+h2 {
+    color: #e0ad28;
+    font-family: Impact, sans-serif;
+    font-size: 28px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    border-left: 7px solid #a52b24;
+    padding: 8px 14px;
+    background: #303030;
+}
 
-        /* MENU NAVIGASI */
-        tr:nth-child(2) td {
-            background-color: #E9D3B5;
-            padding: 18px 10px;
-            border-bottom: 3px solid #C58B45;
-        }
+h3 {
+    color: #171717;
+    background: #e0ad28;
+    padding: 13px;
+    text-align: center;
+    font-family: Impact, sans-serif;
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transform: rotate(-1deg);
+}
 
-        a {
-            color: #7B3F22;
-            font-weight: bold;
-            text-decoration: none;
-            padding: 7px 12px;
-            border-radius: 12px;
-            transition: all 0.3s ease;
-        }
+/* MENU NAVIGASI */
+tr:nth-child(2) td {
+    background: #e0ad28;
+    padding: 18px 10px;
+    border-bottom: 4px solid #a52b24;
+}
 
-        a:hover {
-            background-color: #8D5524;
-            color: #FFF8E7;
-            box-shadow: 0 4px 10px rgba(78, 52, 46, 0.2);
-        }
+a {
+    color: #e0ad28;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 7px 12px;
+    transition: 0.2s ease;
+}
 
-        /* PARAGRAF */
-        p {
-            line-height: 1.9;
-            text-align: justify;
-        }
+tr:nth-child(2) a {
+    color: #171717;
+    text-transform: uppercase;
+    font-family: Impact, sans-serif;
+    letter-spacing: 1px;
+}
 
-        /* GAMBAR */
-        img {
-            max-width: 100%;
-            width: 300px;
-            height: auto;
-            border-radius: 20px;
-            border: 5px solid #E9D3B5;
-            box-shadow: 0 8px 20px rgba(78, 52, 46, 0.2);
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-        }
+a:hover {
+    background: #a52b24;
+    color: #fff0c2;
+    text-decoration: underline;
+}
 
-        img:hover {
-            transform: scale(1.02);
-            box-shadow: 0 12px 25px rgba(78, 52, 46, 0.3);
-        }
+/* PARAGRAF */
+p {
+    line-height: 1.9;
+    text-align: justify;
+    color: #e5dfd2;
+    font-family: Arial, sans-serif;
+}
 
-        center {
-            padding: 10px;
-            color: #8D5524;
-        }
+/* GAMBAR */
+img {
+    max-width: 100%;
+    width: 300px;
+    height: auto;
+    border-radius: 3px;
+    border: 5px solid #e0ad28;
+    box-shadow: 8px 8px 0 #a52b24;
+    transition: 0.3s ease;
+}
 
-        center i {
-            display: inline-block;
-            margin-top: 10px;
-            padding: 6px 14px;
-            background-color: #F0DDC5;
-            border-radius: 20px;
-            color: #6F3528;
-        }
+img:hover {
+    transform: rotate(-2deg) scale(1.03);
+}
 
-        /* AREA KONTEN */
-        tr:nth-child(3) td {
-            vertical-align: top;
-            background-color: #FFFDF8;
-        }
+/* CAPTION */
+center {
+    padding: 10px;
+    color: #e0ad28;
+}
 
-        tr:nth-child(3) td:first-child {
-            border-right: 2px dashed #D9B99B;
-        }
+center i {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 7px 15px;
+    background: #a52b24;
+    color: #fff0c2;
+    font-weight: bold;
+    text-transform: uppercase;
+}
 
-        /* TAUTAN EKSTERNAL */
-        ol {
-            padding-left: 25px;
-        }
+/* AREA KONTEN */
+tr:nth-child(3) td {
+    vertical-align: top;
+    background-color: #242424;
+}
 
-        li {
-            padding: 8px 0;
-            color: #8D5524;
-        }
+tr:nth-child(3) td:first-child {
+    border-right: 3px dashed #e0ad28;
+}
 
-        li::marker {
-            color: #C58B45;
-            font-weight: bold;
-        }
+tr:nth-child(3) td:last-child {
+    background: #303030;
+}
 
-        /* FOOTER */
-        tr:last-child td {
-            background: linear-gradient(
-                135deg,
-                #6F3528,
-                #A0522D,
-                #6F3528
-            );
-            color: #FFF8E7;
-            border-top: 4px solid #D6A85F;
-            padding: 18px;
-        }
+/* TAUTAN EKSTERNAL */
+ol {
+    padding-left: 25px;
+}
 
-        tr:last-child p {
-            margin: 8px 0;
-        }
+li {
+    padding: 10px 0;
+    color: #e0ad28;
+}
 
-        tr:last-child p[align="right"] {
-            color: #F3D7A5;
-        }
+li::marker {
+    color: #a52b24;
+    font-weight: bold;
+}
 
-        /* RESPONSIVE TABLET */
-        @media screen and (max-width: 950px) {
-            table {
-                width: 95%;
-            }
+/* FOOTER */
+tr:last-child td {
+    background: #a52b24;
+    color: #ffe7a0;
+    border-top: 5px solid #e0ad28;
+    padding: 20px;
+}
 
-            td {
-                padding: 12px;
-                overflow-wrap: anywhere;
-            }
+tr:last-child p {
+    margin: 8px 0;
+    color: #ffe7a0;
+}
 
-            h1 {
-                font-size: 27px;
-            }
-        }
+tr:last-child p[align="right"] {
+    color: #e0ad28;
+}
 
-        /* RESPONSIVE HP */
-        @media screen and (max-width: 600px) {
-            body {
-                margin: 10px 0;
-            }
+/* RESPONSIVE TABLET */
+@media screen and (max-width: 950px) {
+    table {
+        width: 95%;
+    }
 
-            table {
-                width: 96%;
-                font-size: 14px;
-            }
+    td {
+        padding: 12px;
+        overflow-wrap: anywhere;
+    }
 
-            td {
-                padding: 9px;
-            }
+    h1 {
+        font-size: 30px;
+    }
+}
 
-            h1 {
-                font-size: 23px;
-                letter-spacing: 1px;
-            }
+/* RESPONSIVE HP */
+@media screen and (max-width: 600px) {
+    body {
+        margin: 10px 0;
+    }
 
-            h2 {
-                font-size: 20px;
-            }
+    table {
+        width: 96%;
+        font-size: 14px;
+    }
 
-            a {
-                padding: 5px;
-            }
+    td {
+        padding: 9px;
+    }
 
-            img {
-                width: 90%;
-            }
-        }
-    </style>
-</head>
+    h1 {
+        font-size: 25px;
+        letter-spacing: 2px;
+    }
 
-<body bgcolor="">
+    h2 {
+        font-size: 20px;
+    }
 
-<table border="1" width="900" align="center">
+    a {
+        padding: 5px;
+    }
 
-    <!-- HEADER -->
-    <tr>
-        <td colspan="2" align="center" bgcolor="#A52A2A">
-            <font color="white">
-                <h1>Website RAFFASYAH</h1>
-                <i>a day in my life</i>
-            </font>
-        </td>
-    </tr>
-
-    <!-- MENU 4 HYPERLINK -->
-    <tr>
-        <td colspan="2" align="center">
-            <a href="index.html">Beranda</a> |
-            <a href="Profil.html">Profil</a> |
-            <a href="kegiatan.html">Kegiatan</a> |
-            <a href="kontak.html">Kontak</a>
-        </td>
-    </tr>
-
-    <!-- ISI -->
-    <tr>
-        <td>
-            <center>
-                <img src="krakatau.jpeg" width="300">
-                <br>
-                <i>Gunung Anak Krakatau</i>
-            </center>
-
-            <h2>Berita Gunung Anak Krakatau</h2>
-
-            <p>
-                Gunung Anak Krakatau mengalami peningkatan aktivitas vulkanik pada awal September 2026. Erupsi menerus terjadi sejak 4 September pukul 23.07 WIB hingga 6 September 2026 pukul 00.04 WIB. Erupsi tersebut menghasilkan lontaran material vulkanik, lava, serta suara dentuman dan gemuruh yang terdengar hingga wilayah pesisir Banten.
-            </p>
-
-            <p>
-                Setelah erupsi menerus berakhir, Gunung Anak Krakatau masih mengalami beberapa erupsi Strombolian. Aktivitas gunung api terus dipantau oleh Badan Geologi dan PVMBG karena masih terdapat aktivitas kegempaan serta potensi terjadinya erupsi lanjutan. Masyarakat dan wisatawan juga diimbau untuk tidak mendekati kawah aktif dalam radius yang telah ditetapkan.
-            </p>
-
-            <p>
-                Pada 21 September 2026, status Gunung Anak Krakatau diturunkan dari Level III (Siaga) menjadi Level II (Waspada) karena aktivitas vulkaniknya menunjukkan penurunan. Meskipun demikian, masyarakat tetap diminta untuk mengikuti informasi resmi dari pihak berwenang dan tidak melakukan aktivitas di sekitar zona berbahaya. Erupsi tersebut juga dilaporkan menyebabkan munculnya daratan baru di sekitar kawasan Gunung Anak Krakatau.
-            </p>
-
-            <br>
-        </td>
-
-        <!-- TAUTAN LINK -->
-        <td valign="top">
-            <h3>Tautan Eksternal</h3>
-
-            <ol>
-                <li>
-                    <a href="https://www.mawan.net">Website Mawan</a>
-                </li>
-
-                <li>
-                    <a href="https://github.com">Github</a>
-                </li>
-
-                <li>
-                    <a href="https://wikipedia.org">Wikipedia</a>
-                </li>
-
-                <li>
-                    <a href="https://www.w3schools.com">W3Schools</a>
-                </li>
-            </ol>
-        </td>
-    </tr>
-
-    <!-- FOOTER -->
-    <tr bgcolor="#A52A2A">
-        <td colspan="2" align="center">
-            <font color="white">
-                <p>Website Profil Raffasyah</p>
-                <p> murid SMK Negeri 1 tangerang</p>
-            </font>
-
-            <p align="right">
-                <font color="4CAF50" size="2">
-                    &copy; Raffasyah Zidane Ardika
-                </font>
-            </p>
-        </td>
-    </tr>
-
-</table>
-
-</body>
-</html>
+    img {
+        width: 90%;
+    }
+}
